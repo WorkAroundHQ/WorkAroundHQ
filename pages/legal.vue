@@ -35,18 +35,18 @@
 </template>
 
 <script>
-	export default {
-		head: {
-			title: 'Legal Notice',
-			meta: [
-			{
-				hid: 'description',
-				name: 'description',
-				content: 'Legal Notice'
-			}
-			],
-		}
-	}
+export default {
+  head: {
+    title: 'Legal Notice',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Legal Notice'
+      }
+    ],
+  }
+}
 </script>
 
 <style scoped>

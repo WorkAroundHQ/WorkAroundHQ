@@ -124,18 +124,18 @@
 </template>
 
 <script>
-	export default {
-		head: {
-			title: 'Privacy Policy',
-			meta: [
-			{
-				hid: 'description',
-				name: 'description',
-				content: 'Privacy Policy'
-			}
-			],
-		}
-	}
+export default {
+  head: {
+    title: 'Privacy Policy',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Privacy Policy'
+      }
+    ],
+  }
+}
 </script>
 
 <style scoped>

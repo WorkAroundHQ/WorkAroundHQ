@@ -26,22 +26,22 @@
 </template>
 
 <script>
-	export default {
-		head: {
-			title: 'Home',
-			meta: [
-				{
-					hid: 'description',
-					name: 'description',
-					content: 'Home' 
-				}
-			]
-		}
-	}
+export default {
+  head: {
+    title: 'Home',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Home'
+      }
+    ]
+  }
+}
 </script>
 
 <style scoped>
-	.mission {
+  .mission {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
