@@ -4,7 +4,7 @@ export default {
   css: [
     '~/assets/css/main.css'
   ],
-  transition: {
+  pageTransition: {
     name: 'page',
     mode: 'out-in'
   },

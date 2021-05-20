@@ -1,7 +1,7 @@
 <template>
 	<header>
 		<NuxtLink to="/" class="logoBadge">
-			<img class="logoImg" src="~/assets/img/Logo.png" alt="WorkAround Logo" width="32.5 px" height="32.5 px">
+			<img class="logoImg" src="~/assets/img/logo.png" alt="WorkAround Logo" width="32.5 px" height="32.5 px">
 			<p class="logoText">WorkAround</p>
 		</NuxtLink>
 		<div class="socialMedia">
