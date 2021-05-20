@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<div class="content">
+      <script> (function() { let qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 			<Header />
 			<div class="spacer"></div>
 			<main>
@@ -22,7 +23,6 @@
 		</div>
 		<Footer />
     <script async defer data-website-id="19c7ef49-dad0-4129-9448-f9ee75340f66" src="https://cukami.workaround.world/umami.js"></script>
-    <script type="text/javascript">console.log('+1')</script>
 	</div>
 </template>
 
