@@ -22,6 +22,7 @@
 		</div>
 		<Footer />
     <script async defer data-website-id="19c7ef49-dad0-4129-9448-f9ee75340f66" src="https://cukami.workaround.world/umami.js"></script>
+    <script>console.log("+1")</script>
 	</div>
 </template>
 
