@@ -8,8 +8,22 @@ export default {
     name: 'page',
     mode: 'out-in'
   },
+  modules: [
+    'nuxt-protected-mailto',
+  ],
   head: {
+    htmlAttrs: {
+      lang: 'en'
+    },
     titleTemplate: 'WorkAround | %s',
+    script: [
+      {
+        src: 'https://cukami.workaround.world/umami.js',
+        'data-website-id': '19c7ef49-dad0-4129-9448-f9ee75340f66',
+        async: true,
+        defer: true
+      }
+    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

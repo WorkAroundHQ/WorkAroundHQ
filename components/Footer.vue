@@ -3,7 +3,9 @@
 		<div class="footerContent">
 			<p class="designedIn">WorkAround - Developed in Berlin</p>
 			<div class="footerLinks">
-				<a href="mailto:maurice.gerhardt@code.berlin">Contact Us</a>
+				<Mailto mail='maurice.gerhardt@code.berlin' subject="👋🏼 Hello WorkAround">
+					Contact Us
+				</Mailto>
 				<NuxtLink to="/legal">Legal Notice</NuxtLink>
 				<NuxtLink to="/privacy">Privacy</NuxtLink>
 			</div>
