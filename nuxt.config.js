@@ -2,7 +2,7 @@ export default {
   components: true,
   target: 'static',
   css: [
-    '~/assets/css/main.css'
+    '~/assets/scss/main.scss'
   ],
   styleResources: {
     scss: [
@@ -22,14 +22,6 @@ export default {
       lang: 'en'
     },
     titleTemplate: 'WorkAround – %s',
-    script: [
-      {
-        src: 'https://cukami.workaround.world/umami.js',
-        'data-website-id': '19c7ef49-dad0-4129-9448-f9ee75340f66',
-        async: true,
-        defer: true
-      }
-    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -61,6 +53,17 @@ export default {
       
       { hid: 'description', name: 'description', content: 'Main' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+      { rel: 'stylesheet', href: 'https://api.fontshare.com/css?f[]=satoshi@400,500,700,900&f[]=switzer@400,500,600,700,800,900&display=swap' }
+    ],
+    script: [
+      {
+        src: 'https://cukami.workaround.world/umami.js',
+        'data-website-id': '19c7ef49-dad0-4129-9448-f9ee75340f66',
+        async: true,
+        defer: true
+      }
+    ]
   }
 }

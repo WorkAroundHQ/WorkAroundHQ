@@ -1,0 +1,64 @@
+@use 'header';
+@use 'footer';
+@use 'text-styles';
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html, body, #__nuxt, #__layout, #__layout > div:first-child {
+	height: 100%;
+}
+
+#__layout > div:first-child {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Inter', 'Helvetica', sans-serif;
+}
+
+.content {
+	width: 90%;
+	margin: auto;
+	flex: 1 0 auto;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+h1 h2, h3, h3, h4, h5, h6, p, li {
+	color: #2B2D42;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+p, a, li {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+a:hover {
+	color: #2B2D42;
+}
+
+.spacer {
+	height: 115px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .content {
+        width: 90%;
+    }
+}

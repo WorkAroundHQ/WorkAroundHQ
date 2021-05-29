@@ -1,0 +1,44 @@
+// Text styles
+@mixin logo($color: $white, $size: 18px) { 
+  color: $color;
+  font-family: $switzer;
+  font-size: $size; // 30px for desktop
+  font-weight: bold;
+}
+
+@mixin coming-soon($color: $white, $size: 14px) { 
+  color: $color;
+  font-family: $switzer;
+  font-size: $size; // 18px for desktop
+  font-weight: bold;
+}
+
+@mixin hero($color: $white, $size: 28px) { 
+  color: $color;
+  font-family: $switzer;
+  font-size: $size; // 36px for desktop
+  font-weight: bold;
+  line-height: 150%;
+}
+
+@mixin sidekick($color: $white, $size: 18px) {
+  color: $color;
+  font-family: $satoshi;
+  font-size: $size; // 24px for desktop
+  font-weight: medium;
+  line-height: 130%;
+}
+
+@mixin body($color: $dark-gray) {
+  color: $color;
+  font-family: $satoshi;
+  font-size: 14px;
+  font-weight: medium;
+}
+
+@mixin footer($color: $footer, $size: 14px) {
+  color: $color;
+  font-family: $satoshi;
+  font-size: $size; // 12px for desktop
+  font-weight: medium;
+}
