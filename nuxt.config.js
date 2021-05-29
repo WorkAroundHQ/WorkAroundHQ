@@ -39,7 +39,7 @@ export default {
       { name: 'og:url', content: 'https://www.workaround.world'},
       { name: 'og:title', content: 'WorkAround – The digital nomad community'},
       { name: 'og:description', content: 'WorkAround is a community for digital nomads around the world to connect to each other.'},
-      { name: 'og:image', content: 'assets/link-preview.png'},
+      { name: 'og:image', content: 'assets/meta-img.png'},
       { name: 'og:image:alt', content: 'WorkAround is a community for digital nomads around the world to connect to each other.'},
       { name: 'og:site_name', content: 'WorkAround'},
       
@@ -48,7 +48,7 @@ export default {
       { name: 'twitter:url', content: 'https://www.workaround.world'},
       { name: 'twitter:title', content: 'WorkAround – The digital nomad community'},
       { name: 'twitter:description', content: 'WorkAround is a community for digital nomads around the world to connect each other.'},
-      { name: 'twitter:image', content: 'assets/link-preview.png'},
+      { name: 'twitter:image', content: 'assets/meta-img.png'},
       { name: 'twitter:image:alt', content: 'WorkAround is a community for digital nomads around the world to connect to each other.'},
       { name: 'twitter:site', content: '@WorkAroundHQ'},
       { name: 'twitter:creator', content: '@mrcgrhrdt'},
