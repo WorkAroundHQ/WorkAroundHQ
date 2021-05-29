@@ -15,7 +15,7 @@ export default {
     htmlAttrs: {
       lang: 'en'
     },
-    titleTemplate: 'WorkAround | %s',
+    titleTemplate: 'WorkAround – %s',
     script: [
       {
         src: 'https://cukami.workaround.world/umami.js',
@@ -29,22 +29,30 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'keywords', content: 'digital, nomads, nomad, digital nomads, digital nomad, travel, work, WorkAround, around' },
       { name: 'author', content: 'Maurice Gerhardt'},
+
+      // Primary Meta Tags
+      { name: 'title', content: 'WorkAround – The digital nomad community'},
       { name: 'description', content: 'WorkAround is a community for digital nomads around the world to connect to each other.'},
 
+      // Open Graph / Facebook
+      { name: 'og:type', content: 'website'},
+      { name: 'og:url', content: 'https://www.workaround.world'},
+      { name: 'og:title', content: 'WorkAround – The digital nomad community'},
+      { name: 'og:description', content: 'WorkAround is a community for digital nomads around the world to connect to each other.'},
       { name: 'og:image', content: 'assets/link-preview.png'},
       { name: 'og:image:alt', content: 'WorkAround is a community for digital nomads around the world to connect to each other.'},
-      { name: 'og:title', content: '🌏 WorkAround – The digital nomad community'},
-      { name: 'og:description', content: 'WorkAround is a community for digital nomads around the world to connect to each other.'},
-      { name: 'og:type', content: 'website'},
       { name: 'og:site_name', content: 'WorkAround'},
-      { name: 'og:url', content: 'https://www.workaround.world'},
-
-      { name: 'twitter:title', content: '🌏 WorkAround – The digital nomad community'},
+      
+      // Twitter
+      { name: 'twitter:card', content: 'summary'},
+      { name: 'twitter:url', content: 'https://www.workaround.world'},
+      { name: 'twitter:title', content: 'WorkAround – The digital nomad community'},
       { name: 'twitter:description', content: 'WorkAround is a community for digital nomads around the world to connect each other.'},
+      { name: 'twitter:image', content: 'assets/link-preview.png'},
+      { name: 'twitter:image:alt', content: 'WorkAround is a community for digital nomads around the world to connect to each other.'},
       { name: 'twitter:site', content: '@WorkAroundHQ'},
       { name: 'twitter:creator', content: '@mrcgrhrdt'},
-      { name: 'twitter:card', content: 'summary'},
-
+      
       { hid: 'description', name: 'description', content: 'Main' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }]
