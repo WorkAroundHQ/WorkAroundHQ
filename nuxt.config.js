@@ -4,12 +4,18 @@ export default {
   css: [
     '~/assets/css/main.css'
   ],
+  styleResources: {
+    scss: [
+      '~/assets/scss/variables.scss'
+    ]
+  },
   pageTransition: {
     name: 'page',
     mode: 'out-in'
   },
   modules: [
     'nuxt-protected-mailto',
+    '@nuxtjs/style-resources'
   ],
   head: {
     htmlAttrs: {

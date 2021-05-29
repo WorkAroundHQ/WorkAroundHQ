@@ -40,7 +40,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .mission {
 		display: flex;
 		justify-content: center;
@@ -49,7 +49,7 @@ export default {
 	}
 
 	.comingSoonBadge {
-		background-color: #51C4D3;
+		background-color: $primary;
 		border-radius: 10px;
 		width: 135px;
 		height: 30px;
