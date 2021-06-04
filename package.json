@@ -1,6 +1,6 @@
 {
   "name": "workaround",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "pages/index.vue",
   "author": "Maurice Gerhardt",
   "license": "MIT",
