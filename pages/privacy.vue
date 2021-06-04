@@ -137,42 +137,6 @@ export default {
 }
 </script>
 
-<style scoped>
-	.legalTopSpacer {
-		height: 90px;
-	}
-
-	@media only screen and (max-width: 768px) {
-		.legalTopSpacer {
-			height: 50px;
-		}
-	}
-
-	.privacyPolicy {
-		margin-left: 2.5px;
-	}
-
-	.privacyPolicy h3 {
-		margin-top: 25px;
-		margin-bottom: 5px;
-	}
-
-	.privacyPolicy h4 {
-		margin-top: 15px;
-		margin-bottom: 2px;
-	}
-
-	.privacyPolicy p, li {
-		line-height: 1.5em;
-	}
-
-	a {
-		text-decoration: none;
-		transition: color 0.2s;
-		color: #686f7d;
-	}
-
-	ul {
-		margin: 10px 0 10px 15px;
-	}
+<style lang="scss" scoped>
+@import 'assets/scss/pages/legal.scss';
 </style>

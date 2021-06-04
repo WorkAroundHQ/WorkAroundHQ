@@ -4,11 +4,11 @@ export default {
   css: [
     '~/assets/scss/main.scss'
   ],
-  styleResources: {
-    scss: [
-      '~/assets/scss/variables.scss'
-    ]
-  },
+  // styleResources: {
+  //   scss: [
+  //     '~/assets/scss/variables.scss'
+  //   ]
+  // },
   pageTransition: {
     name: 'page',
     mode: 'out-in'

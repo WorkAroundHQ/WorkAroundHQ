@@ -48,26 +48,6 @@ export default {
 }
 </script>
 
-<style scoped>
-	.legalTopSpacer {
-	height: 90px;
-	}
-
-	@media only screen and (max-width: 768px) {
-		.legalTopSpacer {
-			height: 50px;
-		}
-	}
-
-	.legalNotice {
-		margin-left: 2.5px;
-	}
-
-	.legalNotice h3 {
-		margin-bottom: 5px;
-	}
-
-	.legalNotice p {
-		line-height: 1.5em;
-	}
+<style lang="scss" scoped>
+@import 'assets/scss/pages/legal.scss';
 </style>

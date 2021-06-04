@@ -1,0 +1,93 @@
+@use 'assets/scss/modules/color.scss';
+
+.mission {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.comingSoonBadge {
+	background-color: color.$primary;
+	border-radius: 10px;
+	width: 135px;
+	height: 30px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.comingSoonText {
+	color: white;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.missionStatement {
+	font-weight: 900;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.caption {
+	color: #949FB3;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	max-width: 760px;
+}
+
+.midSpacer {
+	height: 130px;
+}
+
+.contact {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contactButton {
+	display: inline-block;
+	background-color: #114477;
+	color: white;
+	font-size: 18px;
+	line-height: 50px;
+	text-align: center;
+	margin: 0;
+	height: 50px;
+	padding: 0 33px;
+	border-radius: 10px;
+	max-width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight:  500;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition: background-color 0.2s;
+}
+
+.contactButton:hover {
+	color: white;
+	background-color: #2B2D42;
+}
+
+.contactSpacer {
+	height: 45px;
+}
+
+.note {
+	font-weight: 500;
+	text-align: center;
+	width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+	.note {
+		width: 90%;
+	}
+}
