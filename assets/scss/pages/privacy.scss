@@ -1,5 +1,18 @@
+@use 'assets/scss/modules/color.scss';
+@use 'assets/scss/modules/text-styles';
+
+.backgroundImage {
+	position: absolute;
+	height: 250.26px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	object-fit: cover;
+	filter: brightness(60%);
+}
+
 .legalTopSpacer {
-	height: 90px;
+	height: 100px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -9,27 +22,42 @@
 }
 
 .privacyPolicy {
-	margin-left: 2.5px;
-}
+	margin-left: 11px;
+	z-index: 10;
 
-.privacyPolicy h3 {
-	margin-top: 25px;
-	margin-bottom: 5px;
-}
+	h2 {
+		@include text-styles.hero(color.$white, 36px);
+		margin-bottom: 60px
+	}
 
-.privacyPolicy h4 {
-	margin-top: 15px;
-	margin-bottom: 2px;
-}
+	h3 {
+		@include text-styles.sidekick(color.$dark-gray);
+		font-weight: 700;
+		margin-top: 25px;
+		margin-bottom: 5px;
+	}
 
-.privacyPolicy p, li {
-	line-height: 1.5em;
+	h4 {
+		@include text-styles.body(color.$dark-gray);
+		font-weight: 700;
+		margin-top: 15px;
+		margin-bottom: 2px;
+	}
+
+	p, li {
+		@include text-styles.body(color.$dark-gray);
+		line-height: 1.5em;
+	}
 }
 
 a {
+	@include text-styles.body(color.$primary-hover);
 	text-decoration: none;
 	transition: color 0.2s;
-	color: #686f7d;
+}
+
+a:hover{
+	color: color.$primary;
 }
 
 ul {

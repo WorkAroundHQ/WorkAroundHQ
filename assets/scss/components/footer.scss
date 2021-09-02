@@ -1,5 +1,9 @@
+@use 'assets/scss/modules/color.scss';
+@use 'assets/scss/modules/text-styles';
+
+
 .footer {
-	border-top: 2px solid #EDF2F4;
+	border-top: 2px solid color.$footer-divider;
 	height: 75px;
 	flex-shrink: 0;
 	display: flex;
@@ -15,17 +19,18 @@
 }
 
 .designedIn {
-	color: #686f7d;
+	@include text-styles.footer(color.$footer);
 	position: relative;
 	display: flex;
-	align-items: center
+	align-items: center;
 }
 
 footer a {
-	color: #686f7d;
+	color: color.$footer;
 }
 
 .footerLinks {
+	@include text-styles.footer(color.$footer);
 	position: relative;
 	width: 15em;
 	display: flex;

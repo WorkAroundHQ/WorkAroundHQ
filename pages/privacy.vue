@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<div class="content">
+			<img class="backgroundImage" src="../assets/img/underlay.webp" alt="Background Image">
 			<Header />
 			<main>
 				<div class="legalTopSpacer"></div>
@@ -19,18 +20,8 @@
 					<h3>I. Information about us as controllers of your data</h3>
 					<p>The party responsible for this website (the "controller") for purposes of data protection law is:</p>
 					<br>
-					<p>Maurice Gerhardt<br>
-						An der Wuhlheide 226<br>
-						12459 Berlin<br>
-						Germany
-					</p>
-					<br>
-					<p>Phone: +49 179 829 74 29<br>
-						Email: maurice.gerhardt@code.berlin
-					</p>
-					<br>
-					<p>The controller's data protection officer is:</p>
-					<p>Maurice Gerhardt</p>
+					<p>Name: Maurice Gerhardt<br>
+					<p>Email: maurice.gerhardt@code.berlin</p>
 
 					<h3>II. The rights of users and data subjects</h3>
 					<p>With regard to the data processing to be described in more detail below, users and data subjects have the right</p>
@@ -138,5 +129,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'assets/scss/pages/legal.scss';
+@import 'assets/scss/pages/privacy.scss';
 </style>

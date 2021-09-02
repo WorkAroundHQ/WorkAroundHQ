@@ -1,20 +1,15 @@
 <template>
 	<div>
 		<div class="content">
+			<img class="backgroundImage" src="../assets/img/underlay.webp" alt="Background Image">
 			<Header />
 			<main>
 				<div class="legalTopSpacer"></div>
 				<section class="legalNotice">
 					<h2>Legal Notice</h2>
 					<br>
-					<h3>Information according to § 5 TMG</h3>
-					<p>Maurice Gerhardt</p>
-					<p>An der Wuhlheide 226</p>
-					<p>12459 Berlin</p>
-					<p>Germany</p>
-					<br>
 					<h3>Contact</h3>
-					<p>Phone: +49 179 829 74 29</p>
+					<p>Name: Maurice Gerhardt</p>
 					<p>Email: maurice.gerhardt@code.berlin</p>
 					<br>
 					<h3>Liability for contents</h3>
