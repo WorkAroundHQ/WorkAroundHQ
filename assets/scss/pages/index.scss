@@ -1,0 +1,121 @@
+@use 'assets/scss/modules/color.scss';
+@use 'assets/scss/modules/text-styles';
+
+.wa-background-image {
+	position: absolute;
+	height: 700px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	object-fit: cover;
+	filter: brightness(60%);
+}
+
+.wa-wavy {
+	position: absolute;
+	height: 400px;
+	width: 100%;
+	left: 0px;
+	top: 400px;
+	object-fit: cover;
+}
+
+.wa-mission {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	z-index: 2;
+}
+
+.wa-coming-soon-badge {
+	background-color: color.$white;
+	border-radius: 5px;
+	padding: 4px 5px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wa-coming-soon {
+	@include text-styles.coming-soon(black, 16px);
+}
+
+.wa-mission-statement {
+	@include text-styles.hero(color.$white, 48px);
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.wa-caption {
+	@include text-styles.sidekick(color.$white, 22px);
+	text-align: center;
+}
+
+.wa-mid-spacer {
+	height: 216px;
+}
+
+.wa-contact {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wa-contact-button {
+	@include text-styles.sidekick(color.$white, 22px);
+	background-color: color.$primary;
+	line-height: normal;
+	text-align: center;
+	padding: 12px 30px;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
+	z-index: 2;
+}
+
+.wa-contact-button:hover {
+	background-color: color.$primary-hover;
+}
+
+.wa-contact-button:active {
+	transform: scale(.9)
+}
+
+.wa-contact-spacer {
+	height: 45px;
+}
+
+.wa-note {
+	@include text-styles.body();
+	text-align: center;
+	font-size: 18px;
+	width: 80%;
+	z-index: 2;
+}
+
+@media only screen and (max-width: 768px) {
+	.wa-mission-statement {
+		margin-bottom: 50px;
+		font-size: 36px;
+	}
+
+	.wa-caption {
+		@include text-styles.sidekick(color.$white, 18px);
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.wa-spacer {
+		height: 10vh;
+	}
+
+	.wa-note {
+		width: 90%;
+	}
+
+	.wa-mid-spacer {
+		height: 30vh;
+	}
+}

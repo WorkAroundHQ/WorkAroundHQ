@@ -1,0 +1,63 @@
+@use 'assets/scss/modules/color';
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #__nuxt, #__layout, #__layout > div:first-child {
+	height: 100%;
+}
+
+#__layout > div:first-child {
+	display: flex;
+	flex-direction: column;
+}
+
+.wa-content {
+	width: 90%;
+	margin: auto;
+	flex: 1 0 auto;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+}
+
+h1 h2, h3, h3, h4, h5, h6, p, li {
+	color: color.$dark-gray;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+p, a, li {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+a:hover {
+	color: color.$primary;
+}
+
+.wa-spacer {
+	height: 115px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .wa-content {
+      width: 90%;
+  }
+}

@@ -1,10 +1,12 @@
 <template>
 	<div>
-		<div class="content">
+		<div class="wa-content">
+			<img class="wa-background-image" src="../assets/img/underlay.webp" alt="Background Image">
+			<img class="wa-wavy" src="../assets/img/wavy.svg" alt="">
 			<Header />
 			<main>
-				<div class="legalTopSpacer"></div>
-				<section class="privacyPolicy">
+				<div class="wa-legal-top-spacer"></div>
+				<section class="wa-privacy-policy">
 					<h2>Privacy Policy</h2>
 					<br>
 					<p>Personal data (usually referred to just as "data" below) will only be processed by us to the extent necessary and for the purpose of providing a functional and user-friendly website, including its contents, and the services offered there.</p>
@@ -19,18 +21,8 @@
 					<h3>I. Information about us as controllers of your data</h3>
 					<p>The party responsible for this website (the "controller") for purposes of data protection law is:</p>
 					<br>
-					<p>Maurice Gerhardt<br>
-						An der Wuhlheide 226<br>
-						12459 Berlin<br>
-						Germany
-					</p>
-					<br>
-					<p>Phone: +49 179 829 74 29<br>
-						Email: maurice.gerhardt@code.berlin
-					</p>
-					<br>
-					<p>The controller's data protection officer is:</p>
-					<p>Maurice Gerhardt</p>
+					<p>Name: Maurice Gerhardt<br>
+					<p>Email: maurice.gerhardt@code.berlin</p>
 
 					<h3>II. The rights of users and data subjects</h3>
 					<p>With regard to the data processing to be described in more detail below, users and data subjects have the right</p>
@@ -137,42 +129,6 @@ export default {
 }
 </script>
 
-<style scoped>
-	.legalTopSpacer {
-		height: 90px;
-	}
-
-	@media only screen and (max-width: 768px) {
-		.legalTopSpacer {
-			height: 50px;
-		}
-	}
-
-	.privacyPolicy {
-		margin-left: 2.5px;
-	}
-
-	.privacyPolicy h3 {
-		margin-top: 25px;
-		margin-bottom: 5px;
-	}
-
-	.privacyPolicy h4 {
-		margin-top: 15px;
-		margin-bottom: 2px;
-	}
-
-	.privacyPolicy p, li {
-		line-height: 1.5em;
-	}
-
-	a {
-		text-decoration: none;
-		transition: color 0.2s;
-		color: #686f7d;
-	}
-
-	ul {
-		margin: 10px 0 10px 15px;
-	}
+<style lang="scss" scoped>
+@import 'assets/scss/pages/privacy.scss';
 </style>

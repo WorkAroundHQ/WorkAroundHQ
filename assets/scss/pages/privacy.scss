@@ -1,0 +1,87 @@
+@use 'assets/scss/modules/color.scss';
+@use 'assets/scss/modules/text-styles';
+
+.wa-background-image {
+	position: absolute;
+	height: 325px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	object-fit: cover;
+	filter: brightness(60%);
+}
+
+.wa-wavy {
+	position: absolute;
+	height: 125px;
+	width: 100%;
+	left: 0px;
+	top: 225px;
+	object-fit: fill;
+}
+
+.wa-legal-top-spacer {
+	height: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+	.wa-legal-top-spacer {
+		height: 50px;
+	}
+
+	.wa-wavy {
+		object-fit: cover;
+	}
+}
+
+.wa-privacy-policy {
+	margin-bottom: 32px;
+	z-index: 10;
+
+	h2 {
+		@include text-styles.hero(color.$white, 36px);
+		margin-bottom: 115px
+	}
+
+	h3 {
+		@include text-styles.sidekick(color.$dark-gray);
+		font-weight: 700;
+		margin-top: 25px;
+		margin-bottom: 7px;
+	}
+
+	h4 {
+		@include text-styles.body(color.$dark-gray);
+		font-weight: 700;
+		margin-top: 15px;
+		margin-bottom: 2px;
+	}
+
+	p, li {
+		@include text-styles.body(color.$dark-gray);
+		line-height: 1.5em;
+		width: 90%;
+		hyphens: auto; 
+		text-align: justify;
+	}
+}
+
+a {
+	@include text-styles.body(color.$primary-hover);
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+a:hover{
+	color: color.$primary;
+}
+
+ul {
+	margin: 10px 0 10px 15px;
+}
+
+@media only screen and (max-width: 450px) {
+	.wa-privacy-policy p, li {
+		width: 100%;
+	}	
+}

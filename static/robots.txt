@@ -1,0 +1,16 @@
+# robots.txt for https://www.workaround.world/
+
+User-agent: Baiduspider
+Disallow: /*
+
+User-agent: HaoSouSpider
+Disallow: /*
+
+User-agent: Sogou web spider
+Disallow: /*
+
+User-agent: Sogou inst spider
+Disallow: /*
+
+User-agent: Sogou spider2
+Disallow: /*

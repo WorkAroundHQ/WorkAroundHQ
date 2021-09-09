@@ -1,8 +1,11 @@
 <template>
-	<footer class="footer">
-		<div class="footerContent">
-			<p class="designedIn">WorkAround - Developed in Berlin</p>
-			<div class="footerLinks">
+	<footer class="wa-footer">
+		<div class="wa-footer-content">
+			<div class="wa-from-berlin">
+				<img src="~/assets/img/footer-logo.webp" width="20" alt="WorkAround Logo">
+				<p class="wa-designed-in">Developed in Berlin</p>
+			</div>
+			<div class="wa-footer-links">
 				<Mailto mail='maurice.gerhardt@code.berlin' subject="👋🏼 Hello WorkAround">
 					Contact Us
 				</Mailto>
@@ -12,3 +15,7 @@
 		</div>
 	</footer>
 </template>
+
+<style lang="scss" scoped>
+@import 'assets/scss/components/footer.scss';
+</style>

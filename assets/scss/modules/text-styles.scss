@@ -1,0 +1,50 @@
+@use 'color';
+
+$switzer: 'Switzer', sans-serif;
+$satoshi: 'Satoshi', sans-serif;
+
+@mixin logo($color: color.$white, $size: 18px) { 
+  color: $color;
+  font-family: $switzer;
+  font-size: $size; // 30px for desktop
+  font-weight: 700;
+}
+
+@mixin coming-soon($color: color.$white, $size: 16px) { 
+  color: $color;
+  font-family: $switzer;
+  font-size: $size; // 18px for desktop
+  font-weight: 600;
+}
+
+@mixin hero($color: color.$white, $size: 28px) { 
+  color: $color;
+  font-family: $switzer;
+  font-size: $size; // 36px for desktop
+  font-weight: 600;
+  line-height: 160%;
+  text-decoration: underline;
+  text-underline-offset: 25%
+}
+
+@mixin sidekick($color: color.$white, $size: 18px) {
+  color: $color;
+  font-family: $satoshi;
+  font-size: $size; // 24px for desktop
+  font-weight: 500;
+  line-height: 130%;
+}
+
+@mixin body($color: color.$dark-gray) {
+  color: $color;
+  font-family: $satoshi;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@mixin footer($color: color.$footer, $size: 14px) {
+  color: $color;
+  font-family: $satoshi;
+  font-size: $size; // 12px for desktop
+  font-weight: 500;
+}
