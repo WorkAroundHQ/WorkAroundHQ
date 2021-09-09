@@ -3,7 +3,7 @@
 
 .wa-background-image {
 	position: absolute;
-	height: 250.26px;
+	height: 325px;
 	width: 100%;
 	left: 0px;
 	top: 0px;
@@ -11,15 +11,17 @@
 	filter: brightness(60%);
 }
 
+.wa-wavy {
+	position: absolute;
+	height: 125px;
+	width: 100%;
+	left: 0px;
+	top: 225px;
+	object-fit: fill;
+}
 
 .wa-legal-top-spacer {
 	height: 100px;
-}
-
-@media only screen and (max-width: 768px) {
-	.wa-legal-top-spacer {
-		height: 50px;
-		}
 }
 
 .wa-legal-notice {
@@ -27,7 +29,7 @@
 	
 	h2 {
 		@include text-styles.hero(color.$white, 36px);
-		margin-bottom: 60px
+		margin-bottom: 115px
 	}
 
 	h3 {
@@ -39,5 +41,21 @@
 		@include text-styles.body(color.$dark-gray);
 		line-height: 1.5em;
 		width: 90%;
+		hyphens: auto; 
+		text-align: justify;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.wa-legal-top-spacer {
+		height: 50px;
+	}
+
+	.wa-legal-notice p {
+		width: 100%;
+	}
+
+	.wa-wavy {
+		object-fit: cover;
 	}
 }

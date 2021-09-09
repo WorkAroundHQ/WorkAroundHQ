@@ -3,12 +3,21 @@
 
 .wa-background-image {
 	position: absolute;
-	height: 250.26px;
+	height: 325px;
 	width: 100%;
 	left: 0px;
 	top: 0px;
 	object-fit: cover;
 	filter: brightness(60%);
+}
+
+.wa-wavy {
+	position: absolute;
+	height: 125px;
+	width: 100%;
+	left: 0px;
+	top: 225px;
+	object-fit: fill;
 }
 
 .wa-legal-top-spacer {
@@ -19,6 +28,10 @@
 	.wa-legal-top-spacer {
 		height: 50px;
 	}
+
+	.wa-wavy {
+		object-fit: cover;
+	}
 }
 
 .wa-privacy-policy {
@@ -27,7 +40,7 @@
 
 	h2 {
 		@include text-styles.hero(color.$white, 36px);
-		margin-bottom: 60px
+		margin-bottom: 115px
 	}
 
 	h3 {
@@ -47,7 +60,9 @@
 	p, li {
 		@include text-styles.body(color.$dark-gray);
 		line-height: 1.5em;
-		width: 90%
+		width: 90%;
+		hyphens: auto; 
+		text-align: justify;
 	}
 }
 
@@ -63,4 +78,10 @@ a:hover{
 
 ul {
 	margin: 10px 0 10px 15px;
+}
+
+@media only screen and (max-width: 450px) {
+	.wa-privacy-policy p, li {
+		width: 100%;
+	}	
 }

@@ -2,6 +2,7 @@
 	<div>
 		<div class="wa-content">
 			<img class="wa-background-image" src="../assets/img/underlay.webp" alt="Background Image">
+			<img class="wa-wavy" src="../assets/img/wavy.svg" alt="">
 			<Header />
 			<main>
 				<div class="wa-legal-top-spacer"></div>
