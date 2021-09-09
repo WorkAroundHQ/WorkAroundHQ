@@ -1,9 +1,9 @@
 @use 'assets/scss/modules/color.scss';
 @use 'assets/scss/modules/text-styles';
 
-.backgroundImage {
+.wa-background-image {
 	position: absolute;
-	height: 536.26px;
+	height: 700px;
 	width: 100%;
 	left: 0px;
 	top: 0px;
@@ -11,15 +11,24 @@
 	filter: brightness(60%);
 }
 
-.mission {
+.wa-wavy {
+	position: absolute;
+	height: 400px;
+	width: 100%;
+	left: 0px;
+	top: 400px;
+	object-fit: cover;
+}
+
+.wa-mission {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	z-index: 1;
+	z-index: 2;
 }
 
-.comingSoonBadge {
+.wa-coming-soon-badge {
 	background-color: color.$white;
 	border-radius: 5px;
 	padding: 4px 5px;
@@ -29,67 +38,84 @@
 	justify-content: center;
 }
 
-.comingSoonText {
+.wa-coming-soon {
 	@include text-styles.coming-soon(black, 16px);
 }
 
-.missionStatement {
-	@include text-styles.hero(color.$white, 36px);
+.wa-mission-statement {
+	@include text-styles.hero(color.$white, 48px);
 	text-align: center;
-	margin-bottom: 80px;
+	margin-bottom: 70px;
 }
 
-.caption {
-	@include text-styles.sidekick();
+.wa-caption {
+	@include text-styles.sidekick(color.$white, 22px);
 	text-align: center;
 }
 
-.midSpacer {
+.wa-mid-spacer {
 	height: 216px;
 }
 
-.contact {
+.wa-contact {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 }
 
-.contactButton {
-	@include text-styles.sidekick();
+.wa-contact-button {
+	@include text-styles.sidekick(color.$white, 22px);
 	background-color: color.$primary;
 	line-height: normal;
 	text-align: center;
-	height: 50px;
-	padding: 14px 33px;
+	padding: 12px 30px;
 	border-radius: 10px;
-	transition: background-color 0.2s;
+	transition: all 0.2s ease-in-out;
+	z-index: 2;
 }
 
-.contactButton:hover {
+.wa-contact-button:hover {
 	background-color: color.$primary-hover;
 }
 
-.contactSpacer {
+.wa-contact-button:active {
+	transform: scale(.9)
+}
+
+.wa-contact-spacer {
 	height: 45px;
 }
 
-.note {
+.wa-note {
 	@include text-styles.body();
 	text-align: center;
+	font-size: 18px;
 	width: 80%;
+	z-index: 2;
 }
 
 @media only screen and (max-width: 768px) {
-	.missionStatement {
+	.wa-mission-statement {
 		margin-bottom: 50px;
+		font-size: 36px;
 	}
 
-	.note {
+	.wa-caption {
+		@include text-styles.sidekick(color.$white, 18px);
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.wa-spacer {
+		height: 10vh;
+	}
+
+	.wa-note {
 		width: 90%;
 	}
 
-	.midSpacer {
-		height: 20vh;
+	.wa-mid-spacer {
+		height: 30vh;
 	}
 }

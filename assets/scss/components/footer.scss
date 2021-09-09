@@ -2,7 +2,7 @@
 @use 'assets/scss/modules/text-styles';
 
 
-.footer {
+.wa-footer {
 	border-top: 2px solid color.$footer-divider;
 	height: 75px;
 	flex-shrink: 0;
@@ -10,15 +10,15 @@
 	justify-content: center;
 }
 
-.footerContent {
+.wa-footer-content {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	width: 65%;
+	width: 90%;
 }
 
-.designedIn {
+.wa-designed-in {
 	@include text-styles.footer(color.$footer);
 	position: relative;
 	display: flex;
@@ -29,20 +29,29 @@ footer a {
 	color: color.$footer;
 }
 
-.footerLinks {
+.wa-from-berlin {
+	display: flex;
+	align-items: center;
+
+	img {
+		margin-right: 7px;
+	}
+}
+
+.wa-footer-links {
 	@include text-styles.footer(color.$footer);
 	position: relative;
-	width: 15em;
+	width: 17em;
 	display: flex;
 	justify-content: space-between;
 }
 
 @media only screen and (max-width: 768px) {
-	.footer {
+	.wa-footer {
 		height: 110px;
 	}
 
-	.designedIn {
+	.wa-designed-in {
 		height: 3em;
 		text-align: center;
 		align-content: center
@@ -53,13 +62,13 @@ footer a {
 		margin: 0 4px 0 4px;
 	}
 
-	.footerContent {
+	.wa-footer-content {
 		width: 100%;
 		flex-direction: column;
 		justify-content: space-evenly;
 	}
 
-	.footerLinks {
+	.wa-footer-links {
 		flex-direction: row;
 		justify-content: space-evenly;
 		align-items: center;

@@ -1,11 +1,11 @@
 <template>
 	<div>
-		<div class="content">
-			<img class="backgroundImage" src="../assets/img/underlay.webp" alt="Background Image">
+		<div class="wa-content">
+			<img class="wa-background-image" src="../assets/img/underlay.webp" alt="Background Image">
 			<Header />
 			<main>
-				<div class="legalTopSpacer"></div>
-				<section class="privacyPolicy">
+				<div class="wa-legal-top-spacer"></div>
+				<section class="wa-privacy-policy">
 					<h2>Privacy Policy</h2>
 					<br>
 					<p>Personal data (usually referred to just as "data" below) will only be processed by us to the extent necessary and for the purpose of providing a functional and user-friendly website, including its contents, and the services offered there.</p>

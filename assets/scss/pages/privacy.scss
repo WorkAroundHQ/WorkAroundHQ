@@ -1,7 +1,7 @@
 @use 'assets/scss/modules/color.scss';
 @use 'assets/scss/modules/text-styles';
 
-.backgroundImage {
+.wa-background-image {
 	position: absolute;
 	height: 250.26px;
 	width: 100%;
@@ -11,18 +11,18 @@
 	filter: brightness(60%);
 }
 
-.legalTopSpacer {
+.wa-legal-top-spacer {
 	height: 100px;
 }
 
 @media only screen and (max-width: 768px) {
-	.legalTopSpacer {
+	.wa-legal-top-spacer {
 		height: 50px;
 	}
 }
 
-.privacyPolicy {
-	margin-left: 11px;
+.wa-privacy-policy {
+	margin-bottom: 32px;
 	z-index: 10;
 
 	h2 {
@@ -34,7 +34,7 @@
 		@include text-styles.sidekick(color.$dark-gray);
 		font-weight: 700;
 		margin-top: 25px;
-		margin-bottom: 5px;
+		margin-bottom: 7px;
 	}
 
 	h4 {
@@ -47,6 +47,7 @@
 	p, li {
 		@include text-styles.body(color.$dark-gray);
 		line-height: 1.5em;
+		width: 90%
 	}
 }
 

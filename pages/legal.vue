@@ -1,11 +1,11 @@
 <template>
 	<div>
-		<div class="content">
-			<img class="backgroundImage" src="../assets/img/underlay.webp" alt="Background Image">
+		<div class="wa-content">
+			<img class="wa-background-image" src="../assets/img/underlay.webp" alt="Background Image">
 			<Header />
 			<main>
-				<div class="legalTopSpacer"></div>
-				<section class="legalNotice">
+				<div class="wa-legal-top-spacer"></div>
+				<section class="wa-legal-notice">
 					<h2>Legal Notice</h2>
 					<br>
 					<h3>Contact</h3>
@@ -22,7 +22,7 @@
 					<p>The contents and works on these pages created by the site operators are subject to German copyright law. The reproduction, editing, distribution and any kind of use outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of these pages are only permitted for private, non-commercial use.<br>Insofar as the content on this site was not created by the operator, the copyrights of third parties are observed. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. If we become aware of any infringements, we will remove such contents immediately.</p>
 				</section>
 			</main>
-			<div class="spacer"></div>
+			<div class="wa-spacer"></div>
 		</div>
 		<Footer />
 	</div>	

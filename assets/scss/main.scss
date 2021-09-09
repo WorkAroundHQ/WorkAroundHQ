@@ -4,6 +4,8 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 html, body, #__nuxt, #__layout, #__layout > div:first-child {
@@ -15,7 +17,7 @@ html, body, #__nuxt, #__layout, #__layout > div:first-child {
 	flex-direction: column;
 }
 
-.content {
+.wa-content {
 	width: 90%;
 	margin: auto;
 	flex: 1 0 auto;
@@ -49,13 +51,13 @@ a:hover {
 	color: color.$primary;
 }
 
-.spacer {
+.wa-spacer {
 	height: 115px;
 }
 
 
 @media only screen and (max-width: 768px) {
-    .content {
-        width: 90%;
-    }
+  .wa-content {
+      width: 90%;
+  }
 }

@@ -1,7 +1,7 @@
 @use 'assets/scss/modules/color.scss';
 @use 'assets/scss/modules/text-styles';
 
-.backgroundImage {
+.wa-background-image {
 	position: absolute;
 	height: 250.26px;
 	width: 100%;
@@ -12,18 +12,17 @@
 }
 
 
-.legalTopSpacer {
+.wa-legal-top-spacer {
 	height: 100px;
 }
 
 @media only screen and (max-width: 768px) {
-	.legalTopSpacer {
+	.wa-legal-top-spacer {
 		height: 50px;
 		}
 }
 
-.legalNotice {
-	margin-left: 11px;
+.wa-legal-notice {
 	z-index: 10;
 	
 	h2 {
@@ -33,11 +32,12 @@
 
 	h3 {
 		@include text-styles.sidekick(color.$dark-gray);
-		margin-bottom: 5px;
+		margin: 10px 0 7px;
 	}
 
 	p {
 		@include text-styles.body(color.$dark-gray);
 		line-height: 1.5em;
+		width: 90%;
 	}
 }
