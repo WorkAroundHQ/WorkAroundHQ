@@ -59,7 +59,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-      { rel: 'stylesheet', href: 'https://api.fontshare.com/css?f[]=satoshi@400,500,700,900&f[]=switzer@400,500,600,700,800,900&display=swap' }
+      { rel: 'preload', href: 'https://api.fontshare.com/css?f[]=satoshi@400,500,700,900&f[]=switzer@400,500,600,700,800,900&display=swap', as: 'style', onload: 'this.onload=null;this.rel="stylesheet"' }
     ],
     script: [
       {
