@@ -1,77 +1,77 @@
 @use 'assets/scss/modules/color.scss';
 @use 'assets/scss/modules/text-styles';
 
-
-.wa-footer {
-	border-top: 2px solid color.$footer-divider;
+footer.wa-footer {
+	border-top: 1px solid color.$footer-divider;
 	height: 75px;
 	flex-shrink: 0;
 	display: flex;
 	justify-content: center;
-}
 
-.wa-footer-content {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	width: 90%;
-}
+	.wa-footer-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 90%;
 
-.wa-designed-in {
-	@include text-styles.footer(color.$footer);
-	position: relative;
-	display: flex;
-	align-items: center;
-}
-
-footer a {
-	color: color.$footer;
-}
-
-.wa-from-berlin {
-	display: flex;
-	align-items: center;
-
-	img {
-		margin-right: 7px;
+		div.wa-from-berlin {
+			display: flex;
+			align-items: center;
+		
+			p.wa-designed-in {
+				@include text-styles.footer(color.$footer);
+				position: relative;
+				display: flex;
+				align-items: center;
+			}
+		
+			img {
+				margin-right: 7px;
+			}
+		}
+	
+		div.wa-footer-links {
+			@include text-styles.footer(color.$footer);
+			position: relative;
+			width: 17em;
+			display: flex;
+			justify-content: space-between;
+	
+			a {
+				color: color.$footer;
+			}
+		}
 	}
-}
-
-.wa-footer-links {
-	@include text-styles.footer(color.$footer);
-	position: relative;
-	width: 17em;
-	display: flex;
-	justify-content: space-between;
 }
 
 @media only screen and (max-width: 768px) {
-	.wa-footer {
-		height: 110px;
-	}
+	footer.wa-footer {
+		height: 100px;
 
-	.wa-designed-in {
-		height: 3em;
-		text-align: center;
-		align-content: center
-	}
+		div.wa-footer-content {
+			width: 100%;
+			flex-direction: column;
+			justify-content: space-evenly;
 
-	footer a {
-		padding: 16px 0 16px 0;
-		margin: 0 4px 0 4px;
-	}
+			div.wa-from-berlin p.wa-designed-in {
+				height: 3em;
+				text-align: center;
+				align-content: center;
+				font-weight: 400;
+			}
 
-	.wa-footer-content {
-		width: 100%;
-		flex-direction: column;
-		justify-content: space-evenly;
-	}
+			.wa-footer-links {
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+				width: 100%;
 
-	.wa-footer-links {
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: center;
-		width: 100%;
+				a {
+					padding: 16px 0 16px 0;
+					margin: 0 4px 0 4px;
+				}
+			}
+		}
 	}
 }

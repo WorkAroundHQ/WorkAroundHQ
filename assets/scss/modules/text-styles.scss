@@ -24,7 +24,7 @@ $satoshi: 'Satoshi', sans-serif;
   font-weight: 600;
   line-height: 160%;
   text-decoration: underline;
-  text-underline-offset: 25%
+  text-underline-offset: 16px;
 }
 
 @mixin sidekick($color: color.$white, $size: 18px) {

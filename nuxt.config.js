@@ -19,7 +19,7 @@ export default {
     titleTemplate: 'WorkAround – %s',
     meta: [
       { charset: 'utf-8' },
-      { name: 'theme-color', content: '#000000' },
+      { name: 'theme-color', content: '#FFFFFF' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'keywords', content: 'digital, nomads, nomad, digital nomads, digital nomad, travel, work, WorkAround, around' },
       { name: 'author', content: 'Maurice Gerhardt'},

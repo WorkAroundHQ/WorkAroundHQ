@@ -111,6 +111,16 @@
 		height: 10vh;
 	}
 
+	.wa-mission-statement {
+		text-underline-offset: 10px;
+	}
+
+	.wa-contact-button {
+		@include text-styles.sidekick(color.$white, 20px);
+		padding: 8px 20px;
+		border-radius: 10px;
+	}
+
 	.wa-note {
 		width: 90%;
 	}
