@@ -17,6 +17,9 @@ export default {
   render: {
     compressor: shrinkRay()
   },
+  serverMiddleware: [
+    '~/api/headers.js'
+  ],
   head: {
     htmlAttrs: {
       lang: 'en'
