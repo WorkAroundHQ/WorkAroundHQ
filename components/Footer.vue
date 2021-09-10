@@ -2,7 +2,7 @@
 	<footer class="wa-footer">
 		<div class="wa-footer-content">
 			<div class="wa-from-berlin">
-				<img src="~/assets/img/footer-logo.webp" width="20" alt="WorkAround Logo">
+				<img src="~/assets/img/footer-logo.webp" width="20" height="16.2" alt="WorkAround Logo">
 				<p class="wa-designed-in">Developed in Berlin</p>
 			</div>
 			<div class="wa-footer-links">

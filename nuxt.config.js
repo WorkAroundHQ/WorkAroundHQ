@@ -1,3 +1,5 @@
+import shrinkRay from 'shrink-ray-current'
+
 export default {
   components: true,
   target: 'static',
@@ -12,6 +14,9 @@ export default {
     'nuxt-protected-mailto',
     '@nuxtjs/style-resources'
   ],
+  render: {
+    compressor: shrinkRay()
+  },
   head: {
     htmlAttrs: {
       lang: 'en'
