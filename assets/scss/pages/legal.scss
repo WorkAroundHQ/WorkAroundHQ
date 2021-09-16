@@ -3,25 +3,25 @@
 
 .wa-background-image {
 	position: absolute;
-	height: 325px;
 	width: 100%;
-	left: 0px;
+	height: 350px;
 	top: 0px;
+	left: 0px;
 	object-fit: cover;
 	filter: brightness(60%);
 }
 
 .wa-wavy {
 	position: absolute;
-	height: 125px;
 	width: 100%;
+	height: 400px;
+	top: 150px;
 	left: 0px;
-	top: 225px;
-	object-fit: fill;
+	object-fit: cover;
 }
 
 .wa-legal-top-spacer {
-	height: 100px;
+	height: 60px;
 }
 
 .wa-legal-notice {
